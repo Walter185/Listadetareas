@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {Task} from '../../Taks'
+import { Task } from '../../Task';
 import {TASKS} from '../../mock-tasks'
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-tasks-item',
@@ -15,5 +15,7 @@ export class TasksItemComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+onDelete(task:Task){
+  console.log(task);
+}
 }
